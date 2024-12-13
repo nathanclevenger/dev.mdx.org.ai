@@ -1,7 +1,12 @@
 export default {
   index: '',
-  'get-started': '',
-  features: '',
-  themes: '',
-  advanced: ''
+  '---': {
+    type: 'separator'
+  },
+  API: 'API',
+  Agent: 'Agent',
+  App: 'App',
+  Component: 'Component',
+  Function: 'Function',
+  Workflow: 'Workflow'
 }
