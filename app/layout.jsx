@@ -31,7 +31,7 @@ export default async function RootLayout({ children }) {
     <Navbar
       logo={
         <div>
-          <b>MDX</b><span style={{ opacity: '60%' }}>.org.</span><b>AI</b>
+          <b>mdx</b><span style={{ opacity: '60%' }}>.org.ai</span>
         </div>
       }
       // Next.js discord server

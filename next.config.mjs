@@ -3,9 +3,9 @@ import nextra from 'nextra'
 const withNextra = nextra({
   latex: true,
   search: {
-    codeblocks: false
+    codeblocks: true
   },
-  contentDirBasePath: '/docs'
+  contentDirBasePath: '/'
 })
 
 export default withNextra({
