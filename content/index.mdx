@@ -2,39 +2,30 @@ import { Cards } from 'nextra/components'
 import { SiMarkdown, SiYaml, SiJson, SiJavascript, SiReact } from 'react-icons/si'
 import { HiOutlineSparkles } from 'react-icons/hi2'
 
-
-
-
-
-# MDX
+# Why MDX?
 
 MDX brings together unstructured content via Markdown, typed schemas via JSON-LD, structured data via YAML frontmatter, 
 executable code via Javascript/Typescript, and UI components via JSX/React.
 
 <Cards num={5}>
+  <Cards.Card icon={<HiOutlineSparkles />} title='AI' href='#ai'/>
   <Cards.Card icon={<SiMarkdown />} title='Markdown' href='#markdown'/>
   <Cards.Card icon={<SiYaml />} title='YAML' href='#yaml'/>
   <Cards.Card icon={<SiJson />} title='JSON-LD' href='#json-ld'/>
   <Cards.Card icon={<SiJavascript />} title='Javascript / Typescript' href='#javascript-typescript'/>
   <Cards.Card icon={<SiReact />} title='JSX / React' href='#jsx-react'/>
-  <Cards.Card icon={<HiOutlineSparkles />} title='Generative AI' href='#generative-ai'/>
 </Cards>
+
+
+## AI
+
+Most of the internet content that Large Language Models are trained on is in Markdown. Anytime you interact with ChatGPT or any other LLM,
+it responds using Markdown syntax to represent the rich formatting of the content.
 
 ## Markdown
 
 MDX is fully-compatible extension to Markdown, and Markdown is the native language of Large Language Models. Anytime you interact with ChatGPT or any other LLM,
 it responds using Markdown to represent the rich formatting of the content.
-
-
-By extending, MDX brings together four core capabilities into a single format:
-
-1. **Unstructured Content**: The Markdown content can be written in a free-form manner, with no restrictions on the structure or format, and can include links, images, etc.
-
-2. **Structured Data**: YAML frontmatter provides a human-friendly format data format, and with JSON-LD @type attribute it can optionally have a strongly-typed schema.
-
-3. **Executable Code**: Every MDX file is a Javascript/Typescript module, can import external packages or modules, and export variables or executable functions
-
-4. **UI Components**: MDX can include JSX/React components, which can be used to create interactive UI elements, or to render complex data structures.
 
 ## JSON-LD
 
@@ -71,6 +62,14 @@ title: Example Domain
 
 ## YAML
 
+YAML is a human-friendly data serialization language that is fully compatible with JSON. YAML frontmatter is a simple way to add structured data to your Markdown files.
+
+```markdown
+---
+@type: https://mdx.org.ai/SlideDeck
+title: Example Domain
+---
+```
 
 ## Javascript / Typescript
 
@@ -78,5 +77,3 @@ title: Example Domain
 ## JSX / React
 
 
-
-## Generative AI
