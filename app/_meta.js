@@ -3,7 +3,7 @@ export default {
     display: 'hidden'
   },
   docs: {
-    type: 'page',
+    // type: 'page',
     title: 'Documentation'
   },
   blog: {

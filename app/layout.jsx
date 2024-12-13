@@ -9,13 +9,13 @@ export const { viewport } = Head
 export const metadata = {
   metadataBase: new URL('https://nextra.site'),
   title: {
-    template: '%s - Nextra'
+    template: '%s - MDX.org.AI'
   },
-  description: 'Nextra: the Next.js site builder',
-  applicationName: 'Nextra',
+  description: 'MDX.org.AI: the MDX site builder',
+  applicationName: 'MDX.org.AI',
   generator: 'Next.js',
   appleWebApp: {
-    title: 'Nextra'
+    title: 'MDX.org.AI'
   },
   other: {
     'msapplication-TileImage': '/ms-icon-144x144.png',
@@ -31,8 +31,7 @@ export default async function RootLayout({ children }) {
     <Navbar
       logo={
         <div>
-          <b>Nextra</b>{' '}
-          <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
+          <b>MDX</b><span style={{ opacity: '60%' }}>.org.</span><b>AI</b>
         </div>
       }
       // Next.js discord server
@@ -44,7 +43,7 @@ export default async function RootLayout({ children }) {
       <Head faviconGlyph="✦" />
       <body>
         <Layout
-          banner={<Banner storageKey="Nextra 2">Nextra 2 Alpha</Banner>}
+          // banner={<Banner storageKey="Nextra 2">Nextra 2 Alpha</Banner>}
           navbar={navbar}
           footer={<Footer />}
           editLink="Edit this page on GitHub"
