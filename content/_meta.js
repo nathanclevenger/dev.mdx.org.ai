@@ -12,6 +12,8 @@ export default {
   API: 'API',
   App: 'App',
   Assistant: 'Assistant',
+  Blog: 'Blog',
+  BlogPost: 'BlogPost',
   Component: 'Component',
   Function: 'Function',
   Workflow: 'Workflow'
