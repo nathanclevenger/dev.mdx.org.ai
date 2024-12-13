@@ -5,6 +5,7 @@ export default {
   Content: 'Unstructured Content',
   Code: 'Executable Code',
   UI: 'UI Components',
+  packages: 'Packages',
   '---': {
     type: 'separator'
   },
