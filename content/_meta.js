@@ -1,10 +1,10 @@
 export default {
   index: 'MDX',
-  // ai: 'Generative AI',
-  // data: 'Structured Data',
-  // Content: 'Unstructured Content',
-  // Code: 'Executable Code',
-  // UI: 'UI Components',
+  AI: 'Generative AI',
+  Data: 'Structured Data',
+  Content: 'Unstructured Content',
+  Code: 'Executable Code',
+  UI: 'UI Components',
   '---': {
     type: 'separator'
   },
