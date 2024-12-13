@@ -1,13 +1,32 @@
-# Overview
+import { Cards } from 'nextra/components'
+import { SiMarkdown, SiYaml, SiJson, SiJavascript, SiReact } from 'react-icons/si'
+import { HiOutlineSparkles } from 'react-icons/hi2'
 
 
 
-## Why MDX?
+
+
+# MDX
+
+MDX brings together unstructured content via Markdown, typed schemas via JSON-LD, structured data via YAML frontmatter, 
+executable code via Javascript/Typescript, and UI components via JSX/React.
+
+<Cards num={5}>
+  <Cards.Card icon={<SiMarkdown />} title='Markdown' href='#markdown'/>
+  <Cards.Card icon={<SiYaml />} title='YAML' href='#yaml'/>
+  <Cards.Card icon={<SiJson />} title='JSON-LD' href='#json-ld'/>
+  <Cards.Card icon={<SiJavascript />} title='Javascript / Typescript' href='#javascript-typescript'/>
+  <Cards.Card icon={<SiReact />} title='JSX / React' href='#jsx-react'/>
+  <Cards.Card icon={<HiOutlineSparkles />} title='Generative AI' href='#generative-ai'/>
+</Cards>
+
+## Markdown
 
 MDX is fully-compatible extension to Markdown, and Markdown is the native language of Large Language Models. Anytime you interact with ChatGPT or any other LLM,
-it responds using Markdown to represent the rich formatting of the content.  
+it responds using Markdown to represent the rich formatting of the content.
 
-By extending, MDX brings together five core capabilities into a single format:
+
+By extending, MDX brings together four core capabilities into a single format:
 
 1. **Unstructured Content**: The Markdown content can be written in a free-form manner, with no restrictions on the structure or format, and can include links, images, etc.
 
@@ -49,3 +68,15 @@ was created to extend [schema.org](https://schema.org) to provide a @context for
 title: Example Domain
 ---
 ```
+
+## YAML
+
+
+## Javascript / Typescript
+
+
+## JSX / React
+
+
+
+## Generative AI
