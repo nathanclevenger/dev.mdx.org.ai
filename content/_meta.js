@@ -1,6 +1,6 @@
 export default {
   index: 'MDX',
-  AI: 'Generative AI',
+  // AI: 'Generative AI',
   Data: 'Structured Data',
   Content: 'Unstructured Content',
   Code: 'Executable Code',
