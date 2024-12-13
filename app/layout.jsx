@@ -3,6 +3,7 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
+import { Analytics } from '@vercel/analytics/react'
 
 export const { viewport } = Head
 
@@ -47,11 +48,12 @@ export default async function RootLayout({ children }) {
           navbar={navbar}
           footer={<Footer />}
           editLink="Edit this page on GitHub"
-          docsRepositoryBase="https://github.com/ai-primitives/mdx.org.ai/blob/main/examples/docs"
+          docsRepositoryBase="https://github.com/ai-primitives/mdx.org.ai/blob/main"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={await getPageMap()}
         >
           {children}
+          <Analytics />
         </Layout>
       </body>
     </html>
