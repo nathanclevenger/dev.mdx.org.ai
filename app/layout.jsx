@@ -7,7 +7,7 @@ import 'nextra-theme-docs/style.css'
 export const { viewport } = Head
 
 export const metadata = {
-  metadataBase: new URL('https://nextra.site'),
+  metadataBase: new URL('https://mdx.org.ai'),
   title: {
     template: '%s - MDX.org.AI'
   },
@@ -22,7 +22,7 @@ export const metadata = {
     'msapplication-TileColor': '#fff'
   },
   twitter: {
-    site: 'https://nextra.site'
+    site: 'https://mdx.org.ai'
   }
 }
 
@@ -47,7 +47,7 @@ export default async function RootLayout({ children }) {
           navbar={navbar}
           footer={<Footer />}
           editLink="Edit this page on GitHub"
-          docsRepositoryBase="https://github.com/shuding/nextra/blob/main/examples/docs"
+          docsRepositoryBase="https://github.com/ai-primitives/mdx.org.ai/blob/main/examples/docs"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={await getPageMap()}
         >
